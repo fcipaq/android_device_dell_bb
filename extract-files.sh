@@ -2,6 +2,6 @@
 
 set -e
 
-export DEVICE=Z00A
-export VENDOR=asus
+export DEVICE=BB
+export VENDOR=dell
 ./../../$VENDOR/mofd-common/extract-files.sh $@
