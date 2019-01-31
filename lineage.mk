@@ -15,13 +15,13 @@ DEVICE_PACKAGE_OVERLAYS += device/dell/bb/overlay
 PRODUCT_RUNTIMES := runtime_libart_default
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := lineage_BB
+PRODUCT_NAME := lineage_bb
 PRODUCT_BRAND := dell
-PRODUCT_MODEL := DELL_BB
+PRODUCT_MODEL := DELL_bb
 PRODUCT_MANUFACTURER := dell
-PRODUCT_DEVICE := BB
+PRODUCT_DEVICE := bb
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=WW_BB \
-    BUILD_FINGERPRINT=dell/WW_BB/BB:6.0.1/MMB29P/4.21.40.134_20160825_4746_user:user/release-keys \
+    PRODUCT_NAME=WW_bb \
+    BUILD_FINGERPRINT=dell/WW_bb/bb:6.0.1/MMB29P/4.21.40.134_20160825_4746_user:user/release-keys \
     PRIVATE_BUILD_DESC="dellmofd_bb-user 6.0.1 MMB29P 4.21.40.134_20160825_4746_user release-keys"

@@ -56,7 +56,7 @@ PRODUCT_PACKAGES += \
     NfcNci \
     Tag
 
-$(call inherit-product-if-exists, vendor/dell/bb/BB-vendor.mk)
+$(call inherit-product-if-exists, vendor/dell/bb/bb-vendor.mk)
 
 # Inherit from mofd-common
 $(call inherit-product, device/dell/mofd-common/mofd.mk)

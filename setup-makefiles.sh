@@ -2,6 +2,6 @@
 
 set -e
 
-export DEVICE=BB
+export DEVICE=bb
 export VENDOR=dell
 ./../../$VENDOR/mofd-common/setup-makefiles.sh $@
