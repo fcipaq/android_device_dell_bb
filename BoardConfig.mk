@@ -31,4 +31,4 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 59261286400
 TARGET_BOARD_INFO_FILE ?= device/dell/bb/board-info.txt
 
 # Use the non-open-source parts, if they're present
--include vendor/dell/BB/BoardConfigVendor.mk
+-include vendor/dell/bb/BoardConfigVendor.mk
