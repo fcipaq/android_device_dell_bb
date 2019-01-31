@@ -18,17 +18,17 @@
 -include device/dell/mofd-common/BoardConfigCommon.mk
 
 # Charger
-BOARD_HEALTHD_CUSTOM_CHARGER_RES := device/dell/BB/charger/images
+BOARD_HEALTHD_CUSTOM_CHARGER_RES := device/dell/bb/charger/images
 
 # Mkbootimg
-BOARD_BOOT_KEY := device/dell/BB/keys/boot_bb.sig
-BOARD_RECOVERY_KEY := device/dell/BB/keys/recovery_bb.sig
+BOARD_BOOT_KEY := device/dell/bb/keys/boot_bb.sig
+BOARD_RECOVERY_KEY := device/dell/bb/keys/recovery_bb.sig
 
 # Partitions
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 59261286400
 
 # Require Ifwi version
-TARGET_BOARD_INFO_FILE ?= device/dell/BB/board-info.txt
+TARGET_BOARD_INFO_FILE ?= device/dell/bb/board-info.txt
 
 # Use the non-open-source parts, if they're present
 -include vendor/dell/BB/BoardConfigVendor.mk

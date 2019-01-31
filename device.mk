@@ -27,11 +27,11 @@ $(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-2048-dalv
 $(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-2048-hwui-memory.mk)
 
 DEVICE_PACKAGE_OVERLAYS := \
-    device/dell/BB/overlay
+    device/dell/bb/overlay
 
 # Boot image Signature
 PRODUCT_COPY_FILES += \
-    device/dell/BB/keys/boot_bb.sig:install/bin/boot.sig
+    device/dell/bb/keys/boot_bb.sig:install/bin/boot.sig
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.nfc.xml:system/etc/permissions/android.hardware.nfc.xml \
@@ -39,8 +39,8 @@ PRODUCT_COPY_FILES += \
 
 # NFC
 PRODUCT_COPY_FILES += \
-    device/dell/BB/nfc/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
-    device/dell/BB/nfc/libnfc-brcm-20795a20.conf:system/etc/libnfc-brcm-20795a20.conf
+    device/dell/bb/nfc/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
+    device/dell/bb/nfc/libnfc-brcm-20795a20.conf:system/etc/libnfc-brcm-20795a20.conf
 
 ADDITIONAL_DEFAULT_PROPERTIES += \
     sys.nfc.project_id_str=ze551ml \
@@ -56,7 +56,7 @@ PRODUCT_PACKAGES += \
     NfcNci \
     Tag
 
-$(call inherit-product-if-exists, vendor/dell/BB/BB-vendor.mk)
+$(call inherit-product-if-exists, vendor/dell/bb/BB-vendor.mk)
 
 # Inherit from mofd-common
 $(call inherit-product, device/dell/mofd-common/mofd.mk)

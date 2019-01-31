@@ -6,11 +6,11 @@ TARGET_SCREEN_WIDTH := 1920
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/dell/BB/device.mk)
+$(call inherit-product, device/dell/bb/device.mk)
 
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
-DEVICE_PACKAGE_OVERLAYS += device/dell/BB/overlay
+DEVICE_PACKAGE_OVERLAYS += device/dell/bb/overlay
 
 PRODUCT_RUNTIMES := runtime_libart_default
 
